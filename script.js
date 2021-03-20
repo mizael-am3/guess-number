@@ -3,7 +3,6 @@ function randomF() {
    return random
 }
 let random = randomF()
-console.log(random);
 
 var buttonRestart
 var countHunches = 1
