@@ -1,0 +1,20 @@
+body {
+   font-family: 'JetBrains Mono';
+   background-color: rgb(61, 61, 61);
+   color: rgb(181, 181, 181);
+}
+
+#numberEntered {
+   font-family: 'JetBrains Mono';
+   font-size: 1rem;
+   font-weight: 400;
+   width: 16rem;
+   height: 1.5rem;
+   outline: none;
+   border: none;
+   border-bottom: 1px solid;
+}
+
+#numberEntered::placeholder {
+   font-size: 1rem;
+}
