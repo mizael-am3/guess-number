@@ -15,21 +15,21 @@ function check() {
    attempts.textContent = attempts.textContent + amountAttempts + ', '
 
    if (countHunches == 10) {
-      result.textContent = 'GAME OVER, tentativas acabaram'
+      result.textContent = '[ GAME OVER ] chances acabaram'
       result.style.backgroundColor = 'red'
       gameEnd()
    } else {
       if (numberEntered.value == random) {
-         result.textContent = 'Parabéns, você achou o numero!'
+         result.textContent = `[ ${random} ] Parabéns, você achou o número!`
          result.style.backgroundColor = '#30b67c'
          gameEnd()
       } else if (numberEntered.value > random) {
-         help.textContent = 'Dica: O numero digitado é MAIOR'
+         help.textContent = 'Dica: O número que você digitou é MAIOR'
          result.textContent = 'Errado'
          result.style.color = 'white'
          result.style.backgroundColor = 'red'
       } else if (numberEntered.value < random) {
-         help.textContent = 'Dica: O numero digitado é MENOR'
+         help.textContent = 'Dica: O número que você digitou é MENOR'
          result.textContent = 'Errado'
          result.style.color = 'white'
          result.style.backgroundColor = 'red'
