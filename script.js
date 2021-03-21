@@ -1,8 +1,4 @@
-function randomF() {
-   let random = Math.floor(Math.random() * 100 + 1)
-   return random
-}
-let random = randomF()
+let random = Math.floor(Math.random() * 100 + 1)
 
 var buttonRestart
 var countHunches = 1
@@ -54,7 +50,6 @@ function gameEnd() {
    buttonRestart.textContent = 'Novo Jogo'
    document.body.appendChild(buttonRestart)
    buttonRestart.addEventListener('click', restartGame)
-
 }
 
 function restartGame() {
@@ -66,5 +61,5 @@ function restartGame() {
    numberEntered.disabled = false
    buttonRestart.parentNode.removeChild(buttonRestart)
    numberEntered.focus()
-   randomF()
+   random = Math.floor(Math.random() * 100 + 1)
 }
